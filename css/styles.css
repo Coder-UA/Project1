@@ -28,19 +28,29 @@ body {
 
     color: #212121;
 }
-/* ============== /COMPONENTS ================*/
 
 
-/* ============== HEADER ================*/
-.logo {
+.logo-start {
     font-family: var(--logo-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-        /* identical to box height */
+    /* identical to box height */
     letter-spacing: 0.03em;
-    text-decoration: none;
-     color: #2196F3;
+    color: #2196F3;
+}
+/* ============== /COMPONENTS ================*/
+
+
+/* ============== HEADER ================*/
+.logo-end-header {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #000000;
 }
 .menu-list {
 
@@ -162,6 +172,17 @@ body {
 .footer {
     background: #2F303A;
 }
+
+.logo-end-footer {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
 .footer-address {
         font-style: normal;
 }
