@@ -39,6 +39,9 @@ body {
     letter-spacing: 0.03em;
     color: #2196F3;
 }
+.menu-link.current {
+    color:var(--link-accent-color)
+}
 /* ============== /COMPONENTS ================*/
 
 
@@ -208,7 +211,7 @@ body {
 
 /* @@@--------------- PORTFOLIO -------------------@@@*/
 /* ============== FILTER MENU ================*/
-.filter-menu-link {
+.filter-menu-button {
     background: #F5F4FA;
     font-weight: 500;
     font-size: 16px;
@@ -216,12 +219,14 @@ body {
     /* identical to box height, or 162% */
     letter-spacing: 0.03em;
     color: #212121;
+    cursor: pointer;
 }
 
-.filter-menu-link:hover,
-.filter-menu-link:focus {
+.filter-menu-button:hover,
+.filter-menu-button:focus {
     background: #2196F3;
     color: #FFFFFF;
+    
 }
 
 /* ============== /FILTER MENU/ ================*/
