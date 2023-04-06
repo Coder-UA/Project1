@@ -1,3 +1,10 @@
+:root {
+    --accent-color:#2196F3;
+    --link-accent-color:#2196F3;
+    --primary-font:'Roboto', sans-serif;
+    --logo-font:'Raleway',sans-serif;
+}
+
 
 .list {
     list-style: none;
@@ -26,7 +33,7 @@ body {
 
 /* ============== HEADER ================*/
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--logo-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -53,7 +60,7 @@ body {
 }
 .menu-link:hover,
 .menu-link:focus {
-    color: #2196F3;
+    color: var(--link-accent-color);
 }
 .header-contact-link {
     font-weight: 500;
@@ -64,7 +71,7 @@ body {
 }
 .header-contact-link:hover,
 .header-contact-link:focus {
-    color: #2196F3;
+    color: var(--link-accent-color);
 }
 /* ============== /HEADER/ ================*/
 
@@ -99,7 +106,7 @@ body {
 }
 .hero-button:hover,
 .hero-button:focus {
-    background: #2196F3;
+    background: var(--accent-color);
     cursor: pointer;
 
 }
@@ -125,7 +132,9 @@ body {
 
 
 /* ============== TEAM ================*/
-
+.our-team {
+    background: #F5F4FA;
+}
 .our-team-name {
     font-weight: 500;
     font-size: 16px;
