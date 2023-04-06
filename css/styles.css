@@ -183,3 +183,48 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 /* ============== /FOOTER/ ================*/
+
+
+/* @@@--------------- PORTFOLIO -------------------@@@*/
+/* ============== FILTER MENU ================*/
+.filter-menu-link {
+    background: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    /* identical to box height, or 162% */
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.filter-menu-link:hover,
+.filter-menu-link:focus {
+    background: #2196F3;
+    color: #FFFFFF;
+}
+
+/* ============== /FILTER MENU/ ================*/
+
+/* ============== BODY-BLOCKS ================*/
+.body-block-h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.body-block-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* ============== /BODY-BLOCKS/ ================*/
+
+
+/* @@@------------- /PORTFOLIO/ -------------------@@@*/
