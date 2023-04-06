@@ -42,6 +42,11 @@ body {
 .menu-link.current {
     color:var(--link-accent-color)
 }
+
+.hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
 /* ============== /COMPONENTS ================*/
 
 
