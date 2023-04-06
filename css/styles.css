@@ -1,0 +1,176 @@
+
+.list {
+    list-style: none;
+}
+/* */
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ============== COMPONENTS ================*/
+.h2-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+/* ============== /COMPONENTS ================*/
+
+
+/* ============== HEADER ================*/
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+        /* identical to box height */
+    letter-spacing: 0.03em;
+    text-decoration: none;
+     color: #2196F3;
+}
+.menu-list {
+
+    width: 294px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
+}
+.menu-link {
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.14;
+    letter-spacing: 0.02em;
+    
+    color: #212121;
+}
+.menu-link:hover,
+.menu-link:focus {
+    color: #2196F3;
+}
+.header-contact-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.header-contact-link:hover,
+.header-contact-link:focus {
+    color: #2196F3;
+}
+/* ============== /HEADER/ ================*/
+
+
+/* ============== HERO ================*/
+.hero {
+    background: #2F303A;
+
+}
+
+.hero-text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height:1.36;
+    /* or 136% */
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color:#FFFFFF;
+    background: #188CE8;
+    border-radius: 4px;
+    border-style: none;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+}
+.hero-button:hover,
+.hero-button:focus {
+    background: #2196F3;
+    cursor: pointer;
+
+}
+/* ============== OWR-WORK ================*/
+.our-work-h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+.work-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+/* ============== /OWR-WORK/ ================*/
+
+
+
+/* ============== TEAM ================*/
+
+.our-team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+.our-team-descript {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+
+/* ============== /TEAM/ ================*/
+
+
+/* ============== FOOTER ================*/
+.footer {
+    background: #2F303A;
+}
+.footer-address {
+        font-style: normal;
+}
+.footer-address-street {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+
+}
+.footer-contact {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71px;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* ============== /FOOTER/ ================*/

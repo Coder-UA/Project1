@@ -3,67 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>WebStudio - Головна сторінка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <body>
     <!--Шапка-->
-    <header>
-        <nav><a href="#">WebStudio</a>
-        <ul>
-            <li><a href="#">Студія</a></li>
-            <li><a href="#">Портфоліо</a></li>
-            <li><a href="#">Контакти</a></li>
+    <header class="header">
+        <nav class="page nav"><a href="#" class="logo">WebStudio</a>
+        <ul class="menu list">
+            <li class="menu-item"><a href="#" class="menu-link link">Студія</a></li>
+            <li class="menu-item"><a href="#" class="menu-link link">Портфоліо</a></li>
+            <li class="menu-item"><a href="#" class="menu-link link">Контакти</a></li>
         </ul>
-        <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="header-contact list">
+        <li class="header-contact-item"><a href="mailto:info@devstudio.com" class="header-contact-link link">info@devstudio.com</a></li>
+        <li class="header-contact-item"><a href="tel:+380961111111" class="header-contact-link link">+38 096 111 11 11</a></li>
         </ul>
         </nav>
     </header>
 
 
+
     <main>
-    <!--Перший екран-->
-        <section>
-            <h1>Ефективне рішшення для вашого бізнесу</h1>
-            <button type="button">Заказати послугу</button>
+    <!--HERO-->
+        <section class="hero">
+            <h1 class="hero-text">Ефективне рішшення для вашого бізнесу</h1>
+            <button type="button" class="hero-button">Заказати послугу</button>
         </section>
     <!--Чим займаємось-->
-        <section id="work" >
-            <ul>
-                <li><h3>Увага до деталей</h3><p>Ідейні міркування, а також початок повсякденної роботи з формування позиції.</p></li>
-                <li><h3>Пунктуальність</h3><p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p></li>
-                <li><h3>Планування</h3><p>Так само консультація з широким активом значною мірою зумовлює.</p></li>
-                <li><h3>Сучасні технології</h3><p>Значимість цих проблем настільки очевидна, що реалізація планових завдань</p></li>
+        <section id="work" class="our-work" >
+            <ul class="list">
+                <li><h3 class="our-work-h2">Увага до деталей</h3><p class="work-text">Ідейні міркування, а також початок повсякденної роботи з формування позиції.</p></li>
+                <li><h3 class="our-work-h2">Пунктуальність</h3><p class="work-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p></li>
+                <li><h3 class="our-work-h2">Планування</h3><p class="work-text">Так само консультація з широким активом значною мірою зумовлює.</p></li>
+                <li><h3 class="our-work-h2">Сучасні технології</h3><p class="work-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань</p></li>
             </ul>
-        <h2>Чим ми займаємось</h2>
-        <ul>
+        <h2 class="h2-text">Чим ми займаємось</h2>
+        <ul class="list">
                 <li><img src="./images/about/box1.png" alt="Розробка веб-сайтів" width="370" height="294"/></li>
                 <li><img src="./images/about/box2.png" alt="Адаптивний дизайн" width="370" height="294" /></li>
                 <li><img src="./images/about/box3.png" alt="Розробка колірної схеми" width="370" height="294" /></li>
         </ul>
         </section>
     <!--Команда-->
-        <section id="team">
-            <h2>Наша команда</h2>
-            <ul>
-                <li><img src="./images/team/team_Igor.jpg" alt="Ігор Дем'яненко" width="270" height="260" /><h3>Ігор Дем'яненко</h3><p>Product Designer</p></li>
-                <li><img src="./images/team/team_Olga.jpg" alt="Ольга Рєпіна" width="270" height="260" /><h3>Ольга Рєпіна</h3><p>Frontend Developer</p></li>
-                <li><img src="./images/team/team_Mukola.jpg" alt="Микола Тарасов" width="270" height="260" /><h3>Микола Тарасов</h3>Marketing<p></p></li>
-                <li><img src="./images/team/team_Misha.jpg" alt="Михайло Єрмаков" width="270" height="260" /><h3>Михайло Єрмаков</h3><p>UI Designer</p></li>
+        <section id="team" class="our-team">
+            <h2 class="h2-text">Наша команда</h2>
+            <ul class="list">
+                <li><img src="./images/team/team_Igor.jpg" alt="Ігор Дем'яненко" width="270" height="260"/><h3 class="our-team-name">Ігор Дем'яненко </h3><p class="our-team-descript">Product Designer</p></li>
+                <li><img src="./images/team/team_Olga.jpg" alt="Ольга Рєпіна" width="270" height="260" /><h3 class="our-team-name">Ольга Рєпіна</h3><p class="our-team-descript">Frontend Developer</p></li>
+                <li><img src="./images/team/team_Mukola.jpg" alt="Микола Тарасов" width="270" height="260" /><h3 class="our-team-name">Микола Тарасов</h3><p class="our-team-descript">Marketing</p></li>
+                <li><img src="./images/team/team_Misha.jpg" alt="Михайло Єрмаков" width="270" height="260" /><h3 class="our-team-name">Михайло Єрмаков</h3><p class="our-team-descript">UI Designer</p></li>
             </ul>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <!--Підвал-->
-        <a href="#">WebStudio</a>
-        <address>
-            <p><a href="https://goo.gl/maps/GRRgtMk59hRUUE4f9" target="_blank" rel="noopener noreferrer">м.Київ проспект Лесі Українки, 26</a></p>
-            <p><a href="mailto:info@devstudio.com">info@devstudio.com</a></p>
-            <p><a href="tel:+380961111111">+38 096 111 11 11</a></p>
+        <a href="#" class="logo">WebStudio</a>
+        <address class="footer-address">
+            <p><a href="https://goo.gl/maps/GRRgtMk59hRUUE4f9" class="footer-address-street link" target="_blank" rel="noopener noreferrer" >м.Київ проспект Лесі Українки, 26</a></p>
+            <p><a href="mailto:info@devstudio.com" class="footer-contact link">info@devstudio.com</a></p>
+            <p><a href="tel:+380961111111" class="footer-contact link">+38 096 111 11 11</a></p>
         </address>
     </footer>
+
 </body>
+
 </html>
