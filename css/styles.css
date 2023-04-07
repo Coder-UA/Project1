@@ -394,8 +394,13 @@ button {
 .body-portfolio {
     border-top: 1px solid #ECECEC;
     padding-top: 94px;
-    padding-bottom: 64px;
+    padding-bottom: 94px;
     
+}
+.body-blocks-description {
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
 .body-block-h3 {
     font-weight: 700;
@@ -423,12 +428,11 @@ button {
 .body-blocks-main-bar {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 30px;
     
 }
 .body-blocks-main-item {
-    border: 1px solid #EEEEEE;
-    margin-bottom: 30px;
+
 }
 
 .body-blocks-main-bar-img {
