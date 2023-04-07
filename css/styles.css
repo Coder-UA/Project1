@@ -8,6 +8,7 @@
 
 .list {
     list-style: none;
+    display: flex;
 }
 /* */
 
@@ -18,7 +19,44 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+* {
+    box-sizing: border-box;
+}
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 /* ============== COMPONENTS ================*/
 .h2-text {
     font-weight: 700;
@@ -51,6 +89,27 @@ body {
 
 
 /* ============== HEADER ================*/
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page {
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu {
+    display: flex
+}
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
 .logo-end-header {
     font-family: var(--logo-font);
     font-weight: 700;
@@ -59,6 +118,7 @@ body {
     /* identical to box height */
     letter-spacing: 0.03em;
     color: #000000;
+    margin-right: 93px;
 }
 .menu-list {
 
@@ -80,16 +140,26 @@ body {
 .menu-link:focus {
     color: var(--link-accent-color);
 }
+.header-contact {
+    }
+
+
 .header-contact-link {
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
 }
+
 .header-contact-link:hover,
 .header-contact-link:focus {
     color: var(--link-accent-color);
+}
+.top-email {
+    margin-left: auto;
+    margin-right: 40px;
 }
 /* ============== /HEADER/ ================*/
 
@@ -97,10 +167,15 @@ body {
 /* ============== HERO ================*/
 .hero {
     background: #2F303A;
-
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
 }
 
+
 .hero-text {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height:1.36;
@@ -110,6 +185,10 @@ body {
     color: #FFFFFF;
 }
 .hero-button {
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -125,11 +204,25 @@ body {
 .hero-button:hover,
 .hero-button:focus {
     background: var(--accent-color);
-    cursor: pointer;
 
 }
-/* ============== OWR-WORK ================*/
-.our-work-h2 {
+/* ============== /HERO/ ================*/
+
+/* ============== /BENEFITS/ ================*/
+.benefits {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+.benefits-list-item {
+    
+    width: 270px;
+}
+.benefits-list-item:not(:last-child) {
+
+    margin-right: 50px;
+}
+.benefits-h3 {
+    padding-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -137,7 +230,7 @@ body {
     text-transform: uppercase;
     color: #212121;
 }
-.work-text {
+.benefits-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -145,6 +238,28 @@ body {
     letter-spacing: 0.03em;
     color: #757575;
 }
+
+/* ============== /BENEFITS/ ================*/
+
+/* ============== OWR-WORK ================*/
+.our-work {
+    padding-bottom: 94px;
+}
+.work-h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.work-list {
+    display: flex
+}
+
+.work-img-item {
+    display: flex;
+}
+.work-img-item-list:not(:last-child) {
+    margin-right: 30px;
+}
+
 /* ============== /OWR-WORK/ ================*/
 
 
@@ -152,6 +267,21 @@ body {
 /* ============== TEAM ================*/
 .our-team {
     background: #F5F4FA;
+    text-align: center;
+    padding-top:94px;
+    padding-bottom: 94px;
+}
+.our-team h2 {
+    padding-bottom: 50px;
+}
+.our-team-list-item {
+    box-shadow: 0px 2px 3px rgb(117 117 117 / 60%);
+    border-radius: 5px 5px 5px 5px;
+    background: #FFFFFF;
+}
+.our-team-list-item:not(:last-child) {
+    margin-right: 30px;
+
 }
 .our-team-name {
     font-weight: 500;
@@ -159,6 +289,8 @@ body {
     line-height: 1.18;
     /* identical to box height */
     letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom:10px;
 
     color: #212121;
 }
@@ -168,7 +300,7 @@ body {
     line-height: 19px;
     /* identical to box height */
     letter-spacing: 0.03em;
-
+    padding-bottom: 30px;
     color: #757575;
 }
 
@@ -179,6 +311,8 @@ body {
 /* ============== FOOTER ================*/
 .footer {
     background: #2F303A;
+    padding-top: 60px;  
+    padding-bottom: 60px;
 }
 
 .logo-end-footer {
@@ -189,10 +323,16 @@ body {
     /* identical to box height */
     letter-spacing: 0.03em;
     color: #ffffff;
+    margin-bottom: 30px;
+    display: block;
 }
 
 .footer-address {
-        font-style: normal;
+    font-style: normal;
+
+}
+.footer-address-text:not(:last-child) {
+    margin-bottom: 9px;
 }
 .footer-address-street {
     font-weight: 400;
@@ -216,7 +356,17 @@ body {
 
 /* @@@--------------- PORTFOLIO -------------------@@@*/
 /* ============== FILTER MENU ================*/
+.filter-menu-list {
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.filter-menu-item:not(:last-child) {
+    margin-right: 8px;
+ 
+}
+
 .filter-menu-button {
+    display: flex;
     background: #F5F4FA;
     font-weight: 500;
     font-size: 16px;
@@ -224,7 +374,9 @@ body {
     /* identical to box height, or 162% */
     letter-spacing: 0.03em;
     color: #212121;
-    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 22px 9px 22px;
 }
 
 .filter-menu-button:hover,
@@ -234,9 +386,17 @@ body {
     
 }
 
+
+
 /* ============== /FILTER MENU/ ================*/
 
 /* ============== BODY-BLOCKS ================*/
+.body-portfolio {
+    border-top: 1px solid #ECECEC;
+    padding-top: 94px;
+    padding-bottom: 64px;
+    
+}
 .body-block-h3 {
     font-weight: 700;
     font-size: 18px;
@@ -244,6 +404,9 @@ body {
     /* identical to box height, or 200% */
     letter-spacing: 0.06em;
     color: #212121;
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
 }
 
 .body-block-text {
@@ -253,7 +416,25 @@ body {
     /* identical to box height, or 188% */
     letter-spacing: 0.03em;
     color: #757575;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
 }
+.body-blocks-main-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.body-blocks-main-item {
+    border: 1px solid #EEEEEE;
+    margin-bottom: 30px;
+}
+
+.body-blocks-main-bar-img {
+    
+}
+
 
 /* ============== /BODY-BLOCKS/ ================*/
 
