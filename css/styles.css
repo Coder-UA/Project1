@@ -115,11 +115,10 @@ button {
 }
 
 .menu {
-    display: flex
+    display: flex;
+    gap: 50px;
 }
-.menu-item:not(:last-child) {
-    margin-right: 50px;
-}
+
 .logo-end-header {
     font-family: var(--logo-font);
     font-weight: 700;
@@ -151,7 +150,7 @@ button {
     color: var(--link-accent-color);
 }
 .header-contact {
-    }
+    gap: 50px;}
 
 
 .header-contact-link {
@@ -167,20 +166,22 @@ button {
 .header-contact-link:focus {
     color: var(--link-accent-color);
 }
-.top-email {
-    margin-left: auto;
-    margin-right: 40px;
-}
+
 /* ============== /HEADER/ ================*/
 
 
 /* ============== HERO ================*/
 .hero {
-    background: #2F303A;
-    height: 600px;
+    /* background-color: rgba(47, 48, 58, 0.4); */
+    background-image: url(../images/hero-background.png);
+    
+}
+.hero-container {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    
+    
 }
 
 
@@ -225,19 +226,19 @@ button {
 
 /* ============== /BENEFITS/ ================*/
 .benefits {
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.benefits-list {
+    gap:30px;
+    
 }
 .benefits-list-item {
-    
     width: 270px;
 }
-.benefits-list-item:not(:last-child) {
 
-    margin-right: 50px;
-}
 .benefits-h3 {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -257,23 +258,19 @@ button {
 /* ============== /BENEFITS/ ================*/
 
 /* ============== OWR-WORK ================*/
-.our-work {
-    padding-bottom: 94px;
+.our-work-container {
+    margin-bottom: 94px;
 }
 .work-h2 {
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    
 }
 .work-list {
-    display: flex
+    gap:30px;
 }
 
-.work-img-item {
-    display: flex;
-}
-.work-img-item-list:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 /* ============== /OWR-WORK/ ================*/
 
@@ -282,25 +279,28 @@ button {
 /* ============== TEAM ================*/
 .our-team {
     background: #F5F4FA;
+}
+.our-team-container {
     text-align: center;
     padding-top:94px;
     padding-bottom: 94px;
 }
 .our-team h2 {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.our-team-list {
+    gap:30px;
 }
 .our-team-list-item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: #FFFFFF;
 }
-.our-team-list-item:not(:last-child) {
-    margin-right: 30px;
-
+.our-team-list-item-img {
+    margin-bottom: 30px;
 }
 .our-team-descript {
-    padding-bottom: 30px;
-    padding-top:30px;
+    
 }
 .our-team-name {
     font-weight: 500;
@@ -308,7 +308,7 @@ button {
     line-height: 1.18;
     /* identical to box height */
     letter-spacing: 0.03em;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 
     color: #212121;
 }
@@ -319,6 +319,7 @@ button {
     /* identical to box height */
     letter-spacing: 0.03em;
     color: #757575;
+    margin-bottom: 30px;
 }
 
 
@@ -328,7 +329,10 @@ button {
 /* ============== FOOTER ================*/
 .footer {
     background: #2F303A;
-    padding-top: 60px;  
+    
+}
+.footer-container {
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
@@ -346,11 +350,11 @@ button {
 
 .footer-address {
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
 
-}
-.footer-address-text:not(:last-child) {
-    margin-bottom: 9px;
-}
 .footer-address-street {
     font-weight: 400;
     font-size: 14px;
