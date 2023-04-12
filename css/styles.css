@@ -107,16 +107,15 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
 }
 .page {
     display: flex;
     align-items: center;
+    column-gap: 93px;
+    flex-wrap: wrap;
     
-}
-
-.menu {
-    display: flex;
-    gap: 50px;
 }
 
 .logo-end-header {
@@ -127,14 +126,10 @@ button {
     /* identical to box height */
     letter-spacing: 0.03em;
     color: #000000;
-    margin-right: 93px;
 }
-.menu-list {
-
-    width: 294px;
-    height: 16px;
-    left: 453px;
-    top: 32px;
+.menu {
+    column-gap: 50px;
+    flex-wrap: wrap;
 }
 .menu-link {
 
@@ -150,7 +145,10 @@ button {
     color: var(--link-accent-color);
 }
 .header-contact {
-    gap: 50px;}
+    column-gap: 50px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
 
 
 .header-contact-link {
@@ -231,7 +229,8 @@ button {
 }
 .benefits-list {
     gap:30px;
-    
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .benefits-list-item {
     width: 270px;
@@ -268,6 +267,11 @@ button {
 }
 .work-list {
     gap:30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.work-list-item {
+    width: calc((100% - 2 * 30px) / 3);
 }
 
 
@@ -290,11 +294,15 @@ button {
 }
 .our-team-list {
     gap:30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 .our-team-list-item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: #FFFFFF;
+    width: calc((100% - 3 * 30px) / 4);
 }
 .our-team-list-item-img {
     margin-bottom: 30px;
@@ -376,15 +384,20 @@ button {
 
 
 /* @@@--------------- PORTFOLIO -------------------@@@*/
-/* ============== FILTER MENU ================*/
+
+
+/* ============== BODY-BLOCKS ================*/
+.body-blocks-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
 .filter-menu-list {
-    margin-bottom: 50px;
     justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
 }
-.filter-menu-item:not(:last-child) {
-    margin-right: 8px;
- 
-}
+
 
 .filter-menu-button {
     display: flex;
@@ -408,10 +421,6 @@ button {
 }
 
 
-
-/* ============== /FILTER MENU/ ================*/
-
-/* ============== BODY-BLOCKS ================*/
 .body-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -452,6 +461,7 @@ button {
     
 }
 .body-blocks-main-item {
+    width: calc((100% - 2 * 30px) / 3);;
 
 }
 
