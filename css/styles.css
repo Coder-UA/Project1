@@ -170,9 +170,10 @@ button {
 
 /* ============== HERO ================*/
 .hero {
-    /* background-color: rgba(47, 48, 58, 0.4); */
-    background-image: url(../images/hero-background.png);
-    
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/hero-background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .hero-container {
     padding-top: 200px;
@@ -237,7 +238,7 @@ button {
 }
 
 .benefits-h3 {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -305,18 +306,19 @@ button {
     width: calc((100% - 3 * 30px) / 4);
 }
 .our-team-list-item-img {
-    margin-bottom: 30px;
+
 }
 .our-team-descript {
     
 }
 .our-team-name {
+    padding-top:30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     /* identical to box height */
     letter-spacing: 0.03em;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 
     color: #212121;
 }
@@ -327,7 +329,7 @@ button {
     /* identical to box height */
     letter-spacing: 0.03em;
     color: #757575;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 
