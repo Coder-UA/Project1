@@ -3,6 +3,9 @@
     --link-accent-color:#2196F3;
     --primary-font:'Roboto', sans-serif;
     --logo-font:'Raleway',sans-serif;
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* --transition-duration: 250ms; 
+    --transition-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 
@@ -699,6 +702,12 @@ button {
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
 
+    transition: opacity var(--transition) , visibility var(--transition);
+}
+.popup.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 .modal {
     width: 528px;
