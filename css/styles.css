@@ -78,7 +78,18 @@ button {
     color: #2196F3;
 }
 .menu-link.current {
-    color:var(--link-accent-color)
+    color:var(--link-accent-color);
+    position: relative;
+}
+.menu-link.current::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    bottom: -32px;
 }
 
 .hidden {
@@ -99,11 +110,11 @@ button {
 
 /* ============== HEADER ================*/
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid #ECECEC;
 }
 .header-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -316,8 +327,24 @@ button {
 }
 .work-list-item {
     width: calc((100% - 2 * 30px) / 3);
+    position: relative;
 }
 
+.work-list-item-p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    width: 370px;
+    top: 224px;
+}
 
 
 /* ============== /OWR-WORK/ ================*/
@@ -580,6 +607,34 @@ button {
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
 }
+.body-blocks-imgwrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.body-blocks-imgwrapper-overlay {
+    background: rgba(33, 150, 243, 0.9);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55em;
+    /* or 156% */
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    overflow-y: scroll;
+
+    transition: transform 500ms linear;
+    left: 0;
+    top: 0;
+    padding: 63px 24px;
+    position: absolute;
+    transform: translate(0, 100%);
+    height: 100%;
+}
+.body-blocks-main-item-a:hover .body-blocks-imgwrapper-overlay,
+.body-blocks-main-item-a:focus .body-blocks-imgwrapper-overlay {
+    transform: translate(0.0);
+}
 .body-blocks-h3 {
     font-weight: 700;
     font-size: 18px;
@@ -603,6 +658,7 @@ button {
     padding-right: 24px;
     padding-left: 24px;
 }
+
 .body-blocks-main-bar {
     display: flex;
     flex-wrap: wrap;
@@ -610,7 +666,8 @@ button {
     
 }
 .body-blocks-main-item {
-    width: calc((100% - 2 * 30px) / 3);;
+    width: calc((100% - 2 * 30px) / 3);
+
 
 }
 .body-blocks-main-item-a {
