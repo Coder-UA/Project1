@@ -39,7 +39,41 @@ body {
     border: 5px solid;
     box-sizing: border-box;
 }
+.img-box {
+    background-color: tomato;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* 425 or 600 */
+@media (min-width: 425px),
+(max-width: 540px) {
+    .img-box {
+        background-color: rgb(0, 195, 255);
+    }
+}
+/* 450-500 */
+@media (min-width: 450px ) and (max-width: 500px) {
+    .img-box {
+        background-color: chartreuse;
+    }
 
+}
+
+/* 900px */
+@media (min-width: 600px) {
+    .img-box {
+        background-color:red;
+    }
+
+}
+
+/* 800px */
+@media (min-width: 800px) {
+    .img-box { 
+        background-color:yellow;
+    }
+}
 
 
 .box {
@@ -62,3 +96,19 @@ body {
 .dow:hover {
     background: linear-gradient(to right, rgba(0, 197, 235, 1), rgba(181, 68, 254, 1)) padding-box, linear-gradient(to right, rgba(0, 197, 235, 1), rgba(181, 68, 254, 1)) border-box;
 }
+.box1 {
+    width: 600px;
+    height: 100px;
+    background-color: blue;
+}
+
+@media (max-width: 600px) {
+    .box1 {
+        width: 400px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
