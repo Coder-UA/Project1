@@ -222,10 +222,65 @@ button {
 
 /* ============== HERO ================*/
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/hero-background.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/Hero/hero-background-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width:767px),
+screen and (min-resolution:192dpi) and (max-width:767px),
+screen and (min-resolution: 2dppx) and (max-width:767px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-background-mobile@2x.jpg);
+    }
+}
+@media screen and (min-device-pixel-ratio: 3) and (max-width:767px),
+screen and (min-resolution:288dpi) and (max-width:767px),
+screen and (min-resolution: 3dppx) and (max-width:767px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-background-mobile@3x.jpg);
+    }
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-background-tablet@1x.jpg);
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution:192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-background-tablet@2x.jpg);
+    }
+}
+@media screen and (min-device-pixel-ratio: 3) and (min-width: 768px),
+screen and (min-resolution:288dpi) and (min-width: 768px),
+screen and (min-resolution: 3dppx) and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-background-tablet@3x.jpg);
+    }
+}
+/* PC */
+@media screen and (min-width: 1200px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-background@1x.jpg);
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution:192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-background@2x.jpg);
+    }
+}
+@media screen and (min-device-pixel-ratio: 3),
+screen and (min-resolution:288dpi) and (min-width: 1200px),
+screen and (min-resolution: 3dppx) and (min-width: 1200px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-background@3x.jpg);
+    }
 }
 .hero-container {
     padding-top: 200px;
@@ -325,6 +380,14 @@ button {
 /* ============== /BENEFITS/ ================*/
 
 /* ============== OWR-WORK ================*/
+.our-work {
+    display: none;
+}
+@media screen and (min-width: 1200px) {
+    .our-work {
+        display: block;
+    }
+}
 .our-work-container {
     margin-bottom: 94px;
 }
