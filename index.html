@@ -24,6 +24,11 @@
                     <li class="menu-item"><a href="#" class="menu-link link">Контакти</a></li>
                 </ul>
             </nav>
+            <button type="button" class="header-btn_open js-open-menu" aria-expanded="false" >
+                <svg class="header-btn_open_icon" width="40" height="40">
+                    <use href="./images/sprite.svg#icon-menu_mobile_btn"></use>
+                </svg>
+            </button>
             <ul class="header-contact list">
                 <li class="header-contact-item">
                     <a href="mailto:info@devstudio.com" class="header-contact-link link"><svg class="header-contact-link-svg" width="16" height="16">
@@ -34,8 +39,63 @@
                         <use href="./images/sprite.svg#icon-phone"></use>
                     </svg>+38 096 111 11 11</a></li>
             </ul>
+            
         </div>
-     
+     <div class="mobile-menu js-menu-container">
+       
+       <div class="mobile-menu-content container">
+        <button class="mobile-menu_close-btn js-close-menu">
+            <svg class="mobile-menu_close-icon" width="40" height="40">
+                <use href="./images/sprite.svg#icon-modal-close-btn"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu-list list">
+            <li>
+                <a class="mobile-menu-list-item link current" href="">Студія</a>
+            </li>
+            <li>
+                <a class="mobile-menu-list-item link" href="">Портфоліо</a>
+            </li>
+            <li>
+                <a class="mobile-menu-list-item link" href="">Контакти</a>
+            </li>
+        
+        </ul>
+        <div class="mobile-menu-contact">
+            <address>
+                <ul class="mobile-menu-contact_list list">
+                    <li>
+                        <a class="mobile-menu-contact_list_phone link" href="">+38 096 111 11 11</a>
+                    </li>
+                    <li>
+                        <a class="mobile-menu-contact-list_email link" href="">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address>
+            
+            <ul class="mobile-menu-social list">
+                <li class="mobile-menu-social-item">
+            
+                    <a class="mobile-menu-social-list_link link" href="">Instagram</a>
+                </li>
+                <li class="mobile-menu-social-item">
+            
+                    <a class="mobile-menu-social-list_link link" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu-social-item">
+            
+                    <a class="mobile-menu-social-list_link link" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu-social-item">
+            
+                    <a class="mobile-menu-social-list_link link" href="">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+      
+     </div>
     </header>
 
 
@@ -120,7 +180,7 @@
     <!--Команда-->
         <section id="team" class="our-team">
             <div class="our-team-container container">
-                <h2 class="h2-text our-team-h2">Наша команда</h2>
+                <h2 class="our-team-h2">Наша команда</h2>
                 <ul class="our-team-list list">
                     <li class="our-team-list-item">
                         <picture>
@@ -140,7 +200,7 @@
                                 type="image/webp" />
                             <source srcset="./images/team/team_Igor-mobile@1x.jpg 1x, ./images/team/team_Igor-mobile@2x.jpg 2x, ./images/team/team_Igor-mobile@3x.jpg 3x" media="(max-width: 767px)" />
                             <img class="our-team-list-item-img" srcset="./images/team/team_Igor@2x.jpg 2x, ./images/team/team_Igor@3x.jpg 3x"
-                                src="./images/team/team_Igor@1x.jpg" alt="Ігор Дем'яненко" width="270" height="260">
+                                src="./images/team/team_Igor@1x.jpg" alt="Ігор Дем'яненко" >
 
                         </picture>
                         <div class="our-team-descript">
@@ -200,7 +260,7 @@
                                 srcset="./images/team/team_Olga-mobile@1x.jpg 1x, ./images/team/team_Olga-mobile@2x.jpg 2x, ./images/team/team_Olga-mobile@3x.jpg 3x"
                                 media="(max-width: 767px)" />
                             <img class="our-team-list-item-img" srcset="./images/team/team_Olga@2x.jpg 2x, ./images/team/team_Olga@3x.jpg 3x"
-                                src="./images/team/team_Olga@1x.jpg" alt="Ольга Рєпіна" width="270" height="260">
+                                src="./images/team/team_Olga@1x.jpg" alt="Ольга Рєпіна" >
                         
                         </picture>
                         <div class="our-team-descript">
@@ -260,7 +320,7 @@
                                 srcset="./images/team/team_Mukola-mobile@1x.jpg 1x, ./images/team/team_Mukola-mobile@2x.jpg 2x, ./images/team/team_Mukola-mobile@3x.jpg 3x"
                                 media="(max-width: 767px)" />
                             <img class="our-team-list-item-img" srcset="./images/team/team_Mukola@2x.jpg 2x, ./images/team/team_Mukola@3x.jpg 3x"
-                                src="./images/team/team_Mukola@1x.jpg" alt="Микола Тарасов" width="270" height="260">
+                                src="./images/team/team_Mukola@1x.jpg" alt="Микола Тарасов" >
                         
                         </picture>
                         <div class="our-team-descript">
@@ -321,7 +381,7 @@
                                 media="(max-width: 767px)" />
                             <img class="our-team-list-item-img"
                                 srcset="./images/team/team_Misha@2x.jpg 2x, ./images/team/team_Misha@3x.jpg 3x"
-                                src="./images/team/team_Misha@1x.jpg" alt="Михайло Єрмаков" width="270" height="260">
+                                src="./images/team/team_Misha@1x.jpg" alt="Михайло Єрмаков" >
                         
                         </picture>
                         <div class="our-team-descript">
@@ -368,7 +428,7 @@
     <!--Клієнти-->
         <section>
             <div class="client-container container">
-            <h2 class="client-h2 h2-text">Постійні клієнти</h2>
+            <h2 class="client-h2">Постійні клієнти</h2>
             <ul class="client-list list">
                 <li class="client-list-item">
                     <a class="client-list-item-a" href="">
@@ -469,10 +529,11 @@
                 </ul>
                 </li>
                 <li class="footer-list-item">
-                    <h3 class="footer-list-item-h3">Підпишіться на розсилку</h3>
                    <form class="footer-email-form">
+                    <h3 class="footer-list-item-h3">Підпишіться на розсилку</h3>
+                    <div class="footer-list-block">
                     <input type="email" class="footer-email-form-item" placeholder="E-mail" name="user-email" required minlength="8" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"/>
-                    <div>
+                    
                         <button type="submit" class="footer-email-form-btn button">
                             Підписатися
                             <svg class="" width="24" height="24">
@@ -548,6 +609,7 @@
     </div>
  </div>
  <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
