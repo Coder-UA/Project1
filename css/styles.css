@@ -149,6 +149,7 @@ button {
 @media screen and (max-width:1199px) {  
    
 }
+
 /* 0px - 767px */
 @media screen and (max-width:767px) {
     .menu {
@@ -645,7 +646,13 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
 
 
 }
+/* small - 330*/
+@media screen and (max-width:330px) {
+    .hero-button {
+        font-size: 14px;
 
+    }
+}
 
 
 
@@ -1246,6 +1253,7 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .client-list-item {
         max-width: 210px;
@@ -1460,7 +1468,7 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
         border-radius: 4px;
         background: transparent;
         padding: 15px;
-        width: 450px;
+        max-width: 450px;
 
         font-weight: 400;
         font-size: 16px;
@@ -1758,14 +1766,7 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
 
 /* ============== BODY-BLOCKS ================*/
 
-/* 0px - 767px */
-@media screen and (max-width:767px) {}
 
-/* 768 px - */
-@media screen and (min-width:768px) {}
-
-/* 1200px - */
-@media screen and (min-width:1200px) {}
 
 .body-blocks-container {
     display: flex;
@@ -1773,6 +1774,7 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
     row-gap: 50px;
 }
 .filter-menu-list {
+    display: flex;
     justify-content: center;
     gap: 8px;
     flex-wrap: wrap;
@@ -1822,10 +1824,9 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.55em;
-    /* or 156% */
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 
     transition: transform 500ms linear;
     left: 0;
@@ -1870,7 +1871,7 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
     
 }
 .body-blocks-main-item {
-    width: calc((100% - 2 * 30px) / 3);
+    max-width: 370px;
 
 
 }
@@ -1884,16 +1885,59 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
 }
 
 .body-blocks-main-bar-img {
-    
+    width: 100%;
 }
 
+/* 0px - 767px */
+@media screen and (max-width:767px) {
+    .body-portfolio {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .filter-menu-list {
+        display: flex;
+        gap: 15px 8px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+        .body-blocks-container {
+            row-gap: 40px;
+        }
+    .body-blocks-main-item {
+        max-width: 450px;
+    }
+}
+
+/* 768 px - */
+@media screen and (min-width:768px) {
+    .body-portfolio {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .body-blocks-container {
+            row-gap: 30px;
+        }
+    .body-blocks-h3-tablet {
+        font-size: 17px;
+    }
+}
+
+/* 1200px - */
+@media screen and (min-width:1200px) {
+    .body-blocks-h3-tablet {
+            font-size: 18px;
+        }
+}
 
 /* ============== /BODY-BLOCKS/ ================*/
 
 
 /* @@@------------- /PORTFOLIO/ -------------------@@@*/
 
+
+
 /* ==================== POPUP ========================== */
+
 .popup {
     position: fixed;
     top: 0;
@@ -1902,7 +1946,7 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
-
+    overflow-y: auto;
     transition: opacity var(--transition) , visibility var(--transition);
 }
 .popup.is-hidden {
@@ -2061,12 +2105,14 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71em;
-        /* identical to box height, or 171% */
         letter-spacing: 0.03em;
         color: #757575;
 }
 .popup-form-label-terms-desc-link {
     color: #2196F3;
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
 }
 .popup-form-button {
     background: #2196F3;
@@ -2078,7 +2124,6 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88em;
-    /* identical to box height, or 188% */
     letter-spacing: 0.06em;
     color: #FFFFFF;
     display: flex;
@@ -2092,5 +2137,51 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
     background: #188CE8;
 
 }
+/* 0px - 767px */
+@media screen and (max-width:767px) {
+    .modal {
+        width: 450px;
+        height: 609px;
+    }
+    .popup-form-input-user_text::placeholder {
+        font-size: 14px;
+
+    }
+    
+}
+/* 0px - 450 px */
+@media screen and (max-width:450px) { 
+    .modal {
+        width: 100%;
+        }
+        .popup-form-label-terms-desc {
+        font-size: 12px;
+    }
+    .popup-form-label-terms-desc-link {
+        font-size: 14px;
+    }
+
+    .popup-form-terms-label::before {
+        margin-right: 7px;
+    }
+}
+
+/* 768 px - */
+@media screen and (min-width:768px) {
+    .modal {
+        width: 450px;
+        height: 609px;
+    }
+}
+
+/* 1200px - */
+@media screen and (min-width:1200px) {
+    .modal {
+            width: 528px;
+            height: 581px;
+        }
+}
+
+
 
 /* ==================== /POPUP ========================== */
